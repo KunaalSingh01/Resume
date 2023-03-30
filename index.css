@@ -1,0 +1,161 @@
+body{
+    border:1px solid black;
+}
+#title{
+ font-family: Georgia, 'Times New Roman', Times, serif; 
+ font-weight: 25px;
+ font-style: italic;  
+ font-size: 30px;
+ text-transform: uppercase;
+
+}
+
+.resume-modified{
+        object-fit: contain;
+        width: 225px;
+        height: 225px;
+        margin: 10px;
+}
+#heading2{
+    object-fit: contain;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 38px;
+ 
+}
+.contact-item{
+    display: inline-block;
+    height: 50px;
+    width:50px;
+    padding-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.contacts{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    width:100%;
+    height: 75px;
+    padding-top: 10px;
+        border: solid;
+    background-color: #A9C6DE;
+}
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.heading{
+    text-align: center;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+    width: 90%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+  #first {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+    height: 300px;
+    padding-bottom: 0px;
+    border:solid black;
+    background-color: #A9C6DE;
+    flex-wrap:wrap;
+    margin-bottom: 10px;
+
+  }
+  
+  .row {
+
+    width: 30%;
+    height: 100%;
+    
+  }
+
+  .profile{
+    font-size: 20px;
+    text-align: justify;
+    font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+  }
+  .compname{
+    font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+
+  }
+  .post{
+    font-size: 17px;
+    font-weight: normal;
+    color: #777;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  .time{
+    font-style: italic;
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .resume-modified img {
+    border-radius: 10px;
+    width: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px rgb(33, 30, 30);
+    height: 80%;
+    object-fit: cover;
+}
+
+.resume-modified:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px rgb(143, 19, 139));
+    transition: 0.9ms;
+}
+
+.resume-modified img {
+    filter: grayscale(0%);
+}
+
+.resume-modified figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(1deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0));
+    text-align: center;
+    transition: 0.5ms;
+}
+
+.resume-modified figcaption {
+    opacity: 1;
+    transform: scale(1.02);
+}
